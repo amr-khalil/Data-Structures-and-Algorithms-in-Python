@@ -138,3 +138,22 @@ class LinkedList:
                 self.head = curr_1
 
             curr_1.next, curr_2.next = curr_2.next, curr_1.next
+            
+            
+if __name__ == '__main__':
+    myList = LinkedList()
+    myList.append('A')
+    myList.append('B')
+    myList.append('C')
+    myList.append('D')
+
+    # myList.prepend('#')
+    # myList.insert_after_node(myList.head, '#')
+
+    # myList.delete_node("A")
+    # myList.delete_node("D")
+    # myList.delete_node_at_pos(0)
+
+    myList.print_list()
+    myList.length_recursive(myList.head.next)
+    
